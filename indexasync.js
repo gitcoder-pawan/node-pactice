@@ -44,4 +44,20 @@ const fs= require('fs');
 // fs.writeFile('exportimport/operation.js','this is main file',err=> console.log('file created'));
 
 // fs.mkdir('./npmmod', err=> console.log('folder created'))
- fs.writeFile('./npmmod/index.js','this is ceated inside npm module', err=> console.log('file created'))
+//  fs.writeFile('./npmmod/index.js','this is ceated inside npm module', err=> console.log('file created'))
+// fs.mkdir('http server', err=> console.log('folder created'));
+// fs.writeFile('http server/index.js','this is http sever', err=> console.log('file created'));
+// fs.mkdir('JASON',err=> console.log('folder created'));
+// fs.writeFile('JASON/index.js','this file is inside jaon folder', err=> console.log('file created'));
+// fs.mkdir('userapi', err=> console.log('folder created'));
+// fs.writeFile('userapi/json2.json', '', er=> console.log('file ceat
+// console.log({__dirname})
+
+// fs.mkdir('EventModules',err=>console.log('folder created'));
+// fs.writeFile('EventModules/index.js','',err=>console.log('created'));
+// fs.mkdir('streamModule', err=> console.log('folder created'));
+// fs.writeFile('streamModule/index.js','',err=>console.log('file created'));
+// fs.mkdir('weatherApp',err=>console.log('folder created'));
+// fs.writeFile('weatherApp/index.js', '', err=>console.log('file created'));
+fs.writeFile('weatherApp/index.html','',err=>console.log('file created'));
+
