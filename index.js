@@ -1,8 +1,21 @@
- const chalk = require('chalk');
- const validator= require('validator')
+// to create new file in this folder simply ue command type nul > index.js
 
-console.log(`${chalk.red.italic.bgCyanBright('hello wold')} ${chalk.white.bgGreen.inverse('success')} 'this is chalk properties '`);
-const mail= "ajhdsbcjhajd@jhdcom";
-console.log(validator.isEmail(mail)? chalk.white.bgGreen(mail) : chalk.white.bgRed(mail));
+// first initialize nodejs in our folder using command npm init through termuinal for crating package.json file to store diffenet dependencies
+// install express js using command npm i express
+// then we will instll nodemon for better performnce
 
-//after installing nodemon globally using command (npm i nodemon g-) its will execute the file automatically in an evionment by writing (nodemon index.js)  in the terminal .To exit from this environment we need to enter (ctrl + c) two times  
+// to create xpress app we first ned to reque it 
+const express= require('express');
+
+// then we will call this function  
+const app= express();
+
+//we will start out routing 
+app.get('/',(req,res)=>res.send('you are on home page '));
+
+app.get('/about',(req,res)=>res.send('your are on about page '));
+
+
+// then we will listen this on a port 8000 her We don't need to mention ip address
+app.listen(8000, () => console.log('sever iS listening '));
+
